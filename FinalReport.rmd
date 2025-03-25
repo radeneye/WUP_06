@@ -92,8 +92,10 @@ fisherXY(mydata$race,mydata$cappun)
 
 ## More data version
 
-The p values are all significantly low (0.00000000000000022, 0.002607, and 0.001564). This lets us know that none of the groups were similar to eachother, they are all statistically different.
+The p values are all significantly low (0.00000000000000022, 0.002607, and 0.001564). This lets us know that none of the groups were similar to each other, they are all statistically different.
 
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+
+In this branch, all the groups were statistically different. In our branch number2, the only groups that were statistically different from each other were the white people and the black people. Besides that, the other two groups were quite similar.
