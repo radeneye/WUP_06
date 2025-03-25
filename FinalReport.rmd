@@ -44,7 +44,22 @@ If not, then whose view differs from whom??
 
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question. Bottom line is to explain the features of the graph that are relevant to conforming or departing to what is expected by your null hypothesis !-->
 
+```{r}
+dd3 <- mydata %>% group_by(race,cappun) %>% summarize(count=n()) %>% mutate(prcnt=count/sum(count))
 
+
+# the group_by followed by summarize(count=n())
+
+basicC <- ggplot(dd3,aes(x=race,y=count,fill=cappun))
+basicC + geom_bar(stat="identity",position="dodge")
+
+#Now for percentage plot
+
+basicCC <- ggplot(dd3,aes(x=race,y=prcnt*100,fill=cappun)) 
+basicCC + geom_bar(stat="identity", position = "dodge")
+```
+
+From our observations, we can see a stark difference in how white people vote in comparison to other races. About 1200 white people voted in favor of capital punishment, while less than 250 black people and other races voted in favor of that. We can also see that in general, whether in favor or against capital punishment, a lot more white people voted than all the other races combined.
 
 ## Now with The Most data (fewer variables gives more data points)
 
